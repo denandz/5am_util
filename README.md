@@ -60,7 +60,7 @@ FA 00 1C 40 B0                                    |  ...@.
 
 ### Bench Flashing
 
-The IAW5AM ECUs can be read while connected to a bench powersupply. Use the following pinout on the ECU engine connector (the side with the bolts that are closer together)
+The IAW5AM ECUs can be read while connected to a bench powersupply. Use the following pinout on the ECU body connector (the side with the bolts that are closer together)
 
 * 12V - Pin 4, 17
 * Ground - Pin 10, 34
