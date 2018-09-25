@@ -1,5 +1,5 @@
 /*
-*   File: main.c
+*   File: util.h
 *   Author: DoI
 */
 
@@ -37,9 +37,14 @@
 #define ft_malloc(len,ptr) \
     do { \
         if(NULL == (ptr = malloc(len))){\
-            fatal("[!] Malloc failed\n"); \
+            fatal("Malloc failed\n"); \
         }\
     } while(0)
+
+// Rotate byte b n bits left
+#define rol8(b, n) ((b << n)|(b >> (8 - n)))
+// Rotate byte b n bits right
+#define ror8(b, n) ((b >> n)|(b << (8 - n)))
 
 void dump_hex(const void* data, size_t size);
 
