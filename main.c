@@ -159,15 +159,12 @@ void load_bin(char * path, struct fw * firmware){
     fclose(fp);
 }
 
-// perform the fast init, returns 0 on success, -1 on failure
-int fast_init(int fd){
+void fast_init(int fd){
     // Bit bang the fast init sequence using TIOCSBRK
     ioctl(fd, TIOCSBRK, 0x00);
     usleep(26000);
     ioctl(fd, TIOCCBRK, 0x00);
     usleep(25000);
-
-    return 0;
 }
 
 void set_baudrate(int fd, int baud){
