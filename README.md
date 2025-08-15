@@ -1,3 +1,5 @@
+Migrated to https://codeberg.org/DoI/5am_util
+
 # 5AM Util
 
 5am_util is a firmware reader/writer utility targeted at Marelli IAW5AM ECUs, such as those found on the Ducati 848/1098/1198 bikes, among others. The tool talks to the ECU using KWP2000/UDS via a USB KKL adapter. This tool is a slightly-more-than-bare-bones proof-of-concept, and could probably benefit from things like reasonable ECU response code checking, error recovery and some code cleanup. Moving to a sensible UDS/KWP2000 library probably isn't a silly idea either.
